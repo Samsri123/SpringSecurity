@@ -29,7 +29,7 @@ public class LovePredictionConfig implements WebMvcConfigurer {
 		JavaMailSenderImpl javaMailSenderImpl = new JavaMailSenderImpl();
 		javaMailSenderImpl.setHost("smtp.gmail.com");
 		javaMailSenderImpl.setUsername("lovecalculatorsrikanth143@gmail.com");
-		javaMailSenderImpl.setPassword("bzcmeizmxejpymnu");
+		javaMailSenderImpl.setPassword("");
 		javaMailSenderImpl.setPort(587);
 
 		Properties properties = new Properties();
