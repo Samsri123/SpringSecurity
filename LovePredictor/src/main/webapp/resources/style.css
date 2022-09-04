@@ -1,0 +1,28 @@
+@charset "UTF-8";
+body{
+	background-image:url('img/pexels-karolina-grabowska-4041279.jpg');
+	background-attachment:fixed;
+	background-size:cover;
+	color:white;
+}
+.main{
+	background-color:rgba(0,0,0,0.5);
+	height:768px;
+}
+
+.btn-info{
+	padding:8px 60px;
+	border-radius:40px;
+}
+header h1{
+	text-shadow:2px 3px 5px blue;
+}
+.error{
+	font-size:20px;
+	margin-left:20px;
+}
+.form-div{
+	width:150px;
+	background-color:green;
+	align-self:center;
+}
