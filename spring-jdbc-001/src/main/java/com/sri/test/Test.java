@@ -12,9 +12,9 @@ public class Test {
 		System.out.println("ApplicationContext is loaded");
 		StudentDAOImpl studentDaoImpl = applicationContext.getBean("studentDAO", StudentDAOImpl.class);
 		Student s1 = new Student();
-		s1.setName("Hemanth");
-		s1.setAddress("Bangalore");
-		s1.setRollNo(006);
+		s1.setName("Chowdappa");
+		s1.setAddress("Dharmavaram");
+		s1.setRollNo(011);
 		studentDaoImpl.insert(s1);
 		// StudentDAO studentDAO = new StudentDaoImpl();
 		// studentDAO.insert(s1);
