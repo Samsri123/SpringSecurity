@@ -9,6 +9,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.sri.api.Student;
+import com.sri.resultsetectractor.StudentResultSetExtractor;
 import com.sri.rowmapper.StudentRowMapper;
 
 @Repository("studentDAO")
@@ -69,7 +70,7 @@ public class StudentDAOImpl implements StudentDAO {
 	@Override
 	public List<Student> findAllStudents() {
 		String sql = "SELECT * FROM STUDENT";
-		List<Student> studentList = jdbcTemplate.query(sql, new BeanPropertyRowMapper<Student>(Student.class));
+		List<Student> studentList = jdbcTemplate.query(sql, new StudentResultSetExtractor());
 		return studentList;
 	}
 
@@ -78,6 +79,13 @@ public class StudentDAOImpl implements StudentDAO {
 		String sql = "SELECT * FROM STUDENT WHERE rollNo=?";
 		Student student = jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<Student>(Student.class), rolNo);
 		return student;
+	}
+
+	@Override
+	public List<Student> findStudentByName(String name) {
+		String sql = "SELECT * FROM STUDENT WHERE name=?";
+		List<Student> studentList = jdbcTemplate.query(sql, new StudentResultSetExtractor(), name);
+		return studentList;
 	}
 
 }

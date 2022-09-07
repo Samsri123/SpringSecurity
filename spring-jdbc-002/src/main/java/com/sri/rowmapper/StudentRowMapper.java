@@ -16,7 +16,7 @@ public class StudentRowMapper implements RowMapper<Student> {
 		newStudent.setRollNo(rs.getInt("rollNo"));
 		newStudent.setName(rs.getString("name"));
 		newStudent.setAddress(rs.getString("address"));
-		//System.out.println("maprow( ) called.....");
+		System.out.println("maprow( ) called.....");
 		return newStudent;
 	}
 

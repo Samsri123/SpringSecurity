@@ -18,10 +18,14 @@ public class Test {
 //		helper.setUpStudentTable();
 		studentDAOHelper.setUpStudentTable();
 		StudentDAOImpl studentDAOImpl = context.getBean("studentDAO", StudentDAOImpl.class);
-		List<Student> stdudent =studentDAOImpl.findAllStudents();
+		List<Student> stdudent = studentDAOImpl.findAllStudents();
 		studentDAOHelper.printStudentsList(stdudent);
-		Student s1=studentDAOImpl.findStudentByRollNo(12);
+		Student s1 = studentDAOImpl.findStudentByRollNo(12);
 		System.out.println(s1);
+		System.out.println("...........................");
+
+		List<Student> findStudent = studentDAOImpl.findStudentByName("Roanalds");
+		studentDAOHelper.printStudentsList(findStudent);
 		studentDAOImpl.cleanUp();
 	}
 }
