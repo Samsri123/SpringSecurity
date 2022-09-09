@@ -1,0 +1,10 @@
+/home/srikanth/Desktop/Spring/StudentManagement/src/main/java/com/sri/config/AppConfig.java
+/home/srikanth/Desktop/Spring/StudentManagement/src/main/java/com/sri/api/StudentDTO.java
+/home/srikanth/Desktop/Spring/StudentManagement/src/main/java/com/sri/service/StudentService.java
+/home/srikanth/Desktop/Spring/StudentManagement/src/main/java/com/sri/service/StudentServiceImpl.java
+/home/srikanth/Desktop/Spring/StudentManagement/src/main/java/com/sri/dao/StudentDAO.java
+/home/srikanth/Desktop/Spring/StudentManagement/src/main/java/com/sri/dao/StudentDAOImpl.java
+/home/srikanth/Desktop/Spring/StudentManagement/src/main/java/com/sri/api/Student.java
+/home/srikanth/Desktop/Spring/StudentManagement/src/main/java/com/sri/rowmapper/StudentRowMapper.java
+/home/srikanth/Desktop/Spring/StudentManagement/src/main/java/com/sri/controllers/StudentController.java
+/home/srikanth/Desktop/Spring/StudentManagement/src/main/java/com/sri/config/AppInitializer.java
